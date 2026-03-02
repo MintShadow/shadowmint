@@ -1,0 +1,182 @@
+/* ===== Edit Profile Page ===== */
+
+.ep-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header */
+.ep-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 20px 10px;
+}
+
+.ep-back-btn {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text);
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.ep-header-text {
+  flex: 1;
+}
+
+.ep-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ep-subtitle {
+  opacity: 0.6;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Main */
+.ep-main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Avatar */
+.ep-avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0 4px;
+}
+
+.ep-avatar-hint {
+  font-size: 13px;
+  opacity: 0.55;
+  margin: 0;
+}
+
+/* Field Cards */
+.ep-field-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.ep-field-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.ep-field-label {
+  font-size: 13px;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.ep-field-value {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  word-break: break-all;
+}
+
+/* Copy Button */
+.ep-copy-btn {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--text);
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.ep-copy-btn:active {
+  background: rgba(255,255,255,0.14);
+}
+
+/* Input */
+.ep-input {
+  width: 100%;
+  padding: 11px 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  font-size: 16px;
+  color: var(--text);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.ep-input:focus {
+  border-color: var(--mint);
+}
+
+/* Buttons */
+.ep-edit-btn {
+  width: 100%;
+  padding: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--text);
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.15s;
+}
+
+.ep-btn-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.ep-cancel-btn {
+  flex: 1;
+  padding: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--text);
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ep-save-btn {
+  flex: 2;
+  padding: 16px;
+  background: var(--mint);
+  color: #000;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Legacy class aliases (keep existing profilephoto uploader working) */
+.editprofile-avatar-hint { display: none; }

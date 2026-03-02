@@ -1,0 +1,114 @@
+/* ========================================= */
+/*           KYC VERIFICATION PAGE           */
+/* ========================================= */
+
+.kyc-verification-container {
+  animation: fadeIn 0.35s ease-out;
+}
+
+/* Main card */
+.kyc-card {
+  background: var(--bg-card);
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Title */
+.kyc-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+/* Description */
+.kyc-desc {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Status box */
+.kyc-status-box {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.kyc-info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+  color: var(--text);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.kyc-info-row:last-child {
+  border-bottom: none;
+}
+
+/* Warning text */
+.kyc-warning {
+  font-size: 13px;
+  color: #ffb84d;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Buttons */
+.kyc-btn,
+.kyc-start-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-md);
+  margin-top: 14px;
+}
+
+.kyc-start-btn {
+  background: var(--primary);
+  color: #000;
+  border: none;
+}
+
+.kyc-start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(53, 242, 168, 0.35);
+}
+
+.kyc-btn-secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.kyc-btn-secondary:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+/* Icon */
+.kyc-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+/* Divider */
+.kyc-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 20px 0;
+  opacity: 0.4;
+}

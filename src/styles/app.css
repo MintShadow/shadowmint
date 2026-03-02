@@ -1,0 +1,15 @@
+/* =========================================
+   APP CONTAINER
+   ========================================= */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 70px;
+}

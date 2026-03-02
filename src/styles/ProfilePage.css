@@ -1,0 +1,265 @@
+/* ========================================= */
+/*               PROFILE PAGE                */
+/* ========================================= */
+
+.pf-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 16px 100px;
+}
+
+/* ── CARD ── */
+.pf-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+/* ── IDENTITY CARD ── */
+.pf-identity {
+  border: 1px solid rgba(53, 242, 168, 0.2);
+  background: rgba(53, 242, 168, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pf-avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pf-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #35f2a8, #18b37a);
+  color: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 700;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.pf-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pf-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pf-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.pf-username {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/* KYC Badge */
+.pf-kyc-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.pf-kyc-verified {
+  background: rgba(53, 242, 168, 0.15);
+  color: #35f2a8;
+}
+
+.pf-kyc-pending {
+  background: rgba(255, 193, 7, 0.15);
+  color: #ffc107;
+}
+
+.pf-kyc-unverified {
+  background: rgba(255, 77, 77, 0.15);
+  color: #ff4d4d;
+}
+
+/* Pay Link Row */
+.pf-link-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 10px 12px;
+  gap: 10px;
+}
+
+.pf-link-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+/* Copy Button */
+.pf-copy-btn {
+  font-size: 12px;
+  font-weight: 600;
+  color: #35f2a8;
+  background: transparent;
+  border: 1px solid #35f2a8;
+  border-radius: 8px;
+  padding: 5px 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.pf-copy-btn:hover {
+  background: rgba(53, 242, 168, 0.1);
+}
+
+/* QR Button */
+.pf-qr-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(53, 242, 168, 0.3);
+  background: rgba(53, 242, 168, 0.06);
+  color: #35f2a8;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pf-qr-btn:hover {
+  background: rgba(53, 242, 168, 0.12);
+}
+
+.pf-qr-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.pf-qr-hint {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+
+/* ── SECTIONS ── */
+.pf-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pf-section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+/* ── DETAILS CARD ── */
+.pf-details-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pf-details-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.pf-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pf-detail-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  min-width: 60px;
+}
+
+.pf-detail-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* ── ACTION BUTTONS ── */
+.pf-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pf-action-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.pf-action-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.pf-action-arrow {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+}
+
+.pf-logout {
+  border-color: rgba(255, 77, 77, 0.2);
+  background: rgba(255, 77, 77, 0.06);
+  color: #ff4d4d;
+  margin-top: 4px;
+}
+
+.pf-logout:hover {
+  background: rgba(255, 77, 77, 0.12);
+}
+
+.pf-logout .pf-action-arrow {
+  color: rgba(255, 77, 77, 0.4);
+}

@@ -1,0 +1,57 @@
+.myqr-header {
+  padding: 20px;
+}
+
+.myqr-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.myqr-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* QR Box */
+.myqr-qr-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Username */
+.myqr-username {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Payment Link */
+.myqr-link {
+  text-align: center;
+  opacity: 0.8;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Copy Buttons */
+.myqr-copy-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--card);
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* Full Screen QR */
+.myqr-fullscreen-btn {
+  width: 100%;
+  padding: 16px;
+  background: var(--mint);
+  color: #000;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+}

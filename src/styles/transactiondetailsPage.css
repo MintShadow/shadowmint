@@ -1,0 +1,63 @@
+.tx-header {
+  padding: 20px;
+}
+
+.tx-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.tx-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 20px;
+}
+
+/* Amount Box */
+.tx-amount-box {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tx-amount {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* Status */
+.tx-status {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.tx-status.completed {
+  background: #00ffcc33;
+  color: var(--mint);
+}
+
+.tx-status.pending {
+  background: #ffcc0033;
+  color: #ffcc00;
+}
+
+.tx-status.failed {
+  background: #ff4d4d33;
+  color: #ff4d4d;
+}
+
+/* Cards */
+.tx-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.tx-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}

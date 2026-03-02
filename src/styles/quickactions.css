@@ -1,0 +1,40 @@
+/* ========================================= */
+/*           QUICK ACTION BUTTONS            */
+/* ========================================= */
+
+.quick-actions-bar {
+  display: flex;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.quick-action-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover effect */
+.quick-action-btn:hover {
+  border-color: var(--mint);
+  box-shadow: 0 0 18px rgba(53, 242, 168, 0.35);
+  transform: translateY(-3px);
+}
+
+/* Tap feedback */
+.quick-action-btn:active {
+  transform: scale(0.92);
+  box-shadow: 0 0 10px rgba(53, 242, 168, 0.25);
+}

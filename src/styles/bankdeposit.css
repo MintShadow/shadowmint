@@ -1,0 +1,72 @@
+.bank-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.bank-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.bank-subtitle {
+  opacity: 0.7;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.bank-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Cards */
+.bank-card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 14px;
+  position: relative;
+}
+
+.bank-label {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.bank-value {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 4px;
+  word-break: break-all;
+}
+
+/* Copy Button */
+.bank-copy-btn {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: var(--card-strong);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Info */
+.bank-info {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+/* Done Button */
+.bank-done-btn {
+  width: 100%;
+  padding: 16px;
+  background: var(--mint);
+  color: #000;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+}

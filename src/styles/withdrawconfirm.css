@@ -1,0 +1,42 @@
+.withdrawconfirm-header {
+  padding: 20px;
+}
+
+.withdrawconfirm-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.withdrawconfirm-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.withdrawconfirm-card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.withdrawconfirm-label {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.withdrawconfirm-value {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.withdrawconfirm-btn {
+  width: 100%;
+  padding: 16px;
+  background: var(--mint);
+  color: #000;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+}

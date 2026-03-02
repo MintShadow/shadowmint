@@ -1,0 +1,109 @@
+/* =========================================
+   THEME SYSTEM — Clean Fintech Dark
+   ========================================= */
+
+
+:root {
+  color-scheme: dark;
+
+  /* ── Core palette ── */
+  --bg:           #060810;
+  --bg-elevated:  #0a0d16;
+  --bg-card:      #0e1220;
+  --bg-input:     #0b0e1a;
+
+  /* ── Borders ── */
+  --border:       rgba(255, 255, 255, 0.07);
+  --border-focus: rgba(53, 242, 168, 0.45);
+
+  /* ── Accent ── */
+  --mint:         #35f2a8;
+  --mint-dim:     rgba(53, 242, 168, 0.12);
+  --mint-mid:     rgba(53, 242, 168, 0.25);
+  --primary:      #35f2a8;
+  --accent:       #35f2a8;
+  --accent-soft:  rgba(53, 242, 168, 0.1);
+
+  /* ── Semantic ── */
+  --success:      #35f2a8;
+  --danger:       #f05252;
+  --warning:      #f6a623;
+
+  /* ── Text ── */
+  --text:         #eef0f8;
+  --text-dim:     rgba(238, 240, 248, 0.45);
+  --text-muted:   rgba(238, 240, 248, 0.28);
+  --card-bg:      #0e1220;
+  --input-bg:     #0b0e1a;
+
+  /* ── Shadows ── */
+  --shadow-soft:  0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.55);
+  --shadow-mint:  0 0 20px rgba(53, 242, 168, 0.18);
+
+  /* ── Radius ── */
+  --r-sm:   8px;
+  --r-md:   12px;
+  --r-lg:   16px;
+  --r-xl:   20px;
+  --r-pill: 999px;
+
+  /* ── Spacing ── */
+  --s-xs:  4px;
+  --s-sm:  8px;
+  --s-md:  12px;
+  --s-lg:  16px;
+  --s-xl:  24px;
+  --s-2xl: 32px;
+
+  /* ── Motion ── */
+  --ease-fast:   120ms ease;
+  --ease-md:     200ms ease;
+  --ease-slow:   320ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Typography ── */
+  --font-body:   'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-mono:   'DM Mono', 'SF Mono', monospace;
+
+  /* Legacy compat aliases */
+  --sm-bg:        #060810;
+  --sm-bg-card:   #0e1220;
+  --sm-accent:    #35f2a8;
+  --sm-text:      #eef0f8;
+  --sm-text-muted: rgba(238, 240, 248, 0.45);
+  --sm-border-subtle: rgba(255, 255, 255, 0.07);
+  --sm-radius-lg: 16px;
+  --sm-radius-md: 12px;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg:           #f4f6fb;
+  --bg-elevated:  #ffffff;
+  --bg-card:      #ffffff;
+  --bg-input:     #eef0f7;
+  --border:       rgba(0, 0, 0, 0.08);
+  --border-focus: rgba(0, 163, 108, 0.5);
+  --mint:         #00a36c;
+  --mint-dim:     rgba(0, 163, 108, 0.1);
+  --mint-mid:     rgba(0, 163, 108, 0.2);
+  --primary:      #00a36c;
+  --accent:       #00a36c;
+  --accent-soft:  rgba(0, 163, 108, 0.08);
+  --text:         #0d1117;
+  --text-dim:     rgba(13, 17, 23, 0.5);
+  --text-muted:   rgba(13, 17, 23, 0.3);
+  --card-bg:      #ffffff;
+  --input-bg:     #eef0f7;
+  --shadow-soft:  0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-mint:  0 0 16px rgba(0, 163, 108, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

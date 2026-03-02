@@ -1,0 +1,14 @@
+.qr-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.qr-box {
+  padding: 16px;
+  background: var(--card);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,158 @@
+/* ===== Bank Details Page ===== */
+
+.bd-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.bd-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 20px 10px;
+}
+
+.bd-back-btn {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text);
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.bd-header-text {
+  flex: 1;
+}
+
+.bd-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.bd-subtitle {
+  opacity: 0.6;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.bd-main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bd-field-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.bd-field-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.bd-field-label {
+  font-size: 13px;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.bd-field-value {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  word-break: break-all;
+  letter-spacing: 0.3px;
+}
+
+.bd-copy-btn {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--text);
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.bd-copy-btn:active {
+  background: rgba(255,255,255,0.14);
+}
+
+.bd-input {
+  width: 100%;
+  padding: 11px 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  font-size: 16px;
+  color: var(--text);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.bd-input:focus {
+  border-color: var(--mint);
+}
+
+.bd-edit-btn {
+  width: 100%;
+  padding: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--text);
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.bd-btn-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.bd-cancel-btn {
+  flex: 1;
+  padding: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--text);
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bd-save-btn {
+  flex: 2;
+  padding: 16px;
+  background: var(--mint);
+  color: #000;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,101 @@
+/* ========================================= */
+/*           ACCOUNT OVERVIEW PAGE           */
+/* ========================================= */
+
+/* Main layout wrapper */
+.settings-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Each block (Profile, KYC, Security, Quick Actions) */
+.settings-block {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition-md);
+}
+
+.settings-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 255, 180, 0.12);
+}
+
+/* Titles */
+.settings-block-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+/* Rows inside blocks */
+.settings-block-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--text);
+}
+
+.settings-block-row p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* Buttons */
+.settings-block-btn {
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: #000;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-md);
+  text-align: center;
+}
+
+.settings-block-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(53, 242, 168, 0.35);
+}
+
+.settings-block-btn.logout {
+  background: #ff4d4d;
+  color: white;
+}
+
+.settings-block-btn.logout:hover {
+  box-shadow: 0 0 18px rgba(255, 77, 77, 0.45);
+}
+
+/* Skeleton blocks (when loading=true) */
+.skeleton-block {
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.04) 0%,
+    rgba(0,255,180,0.08) 50%,
+    rgba(255,255,255,0.04) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite linear;
+}
+
+/* Link rows (Top Movers style) */
+.link-row {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Fade-in animation for page */
+.settings-main {
+  animation: fadeIn 0.35s ease-out;
+}

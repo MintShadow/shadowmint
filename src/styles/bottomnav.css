@@ -1,0 +1,14 @@
+/* =========================================
+   BOTTOM NAV — defined in global.css
+   This file kept for import compatibility
+   ========================================= */
+
+/* Active indicator dot */
+.nav-item.active::after {
+  content: '';
+  display: block;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--mint);
+  margin: 2px auto 0;
+}
